@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)file:///D:/Let%C3%B6lt%C3%A9sek/jsbin.zuyetiq.8.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><meta name="robots" content="noindex">
+
+
+  
+  <meta name="viewport" content="width=device-width initial-scale=1">
+  <title>Zoe &amp; Alex esküvője</title>
+  <link rel="stylesheet" href="./Zoe &amp; Alex esküvője_files/reset.css">
+  <link rel="shortcut icon" type="image/x-icon" href="https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-favicon.png">
+  <link href="./Zoe &amp; Alex esküvője_files/css" rel="stylesheet"> 
+<style id="jsbin-css">
+* {
+  box-sizing: border-box;
+}
+h1,h2,h3,
+ul,ol,
+p,
+img {
+    margin-bottom: 1.5rem;
+}
+h1,
+h2 {
+  font-family: 'Great Vibes', cursive;
+}
+h2 {
+  font-size: 3rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+a {
+    color: #bd806e;
+    text-decoration: none;
+}
+a:hover {
+    color: #eda087;
+    transition: color .15s ease-in-out;
+}
+
+body {
+  background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-background.png")repeat center;
+  color: #444349;
+  font-family: 'Libre Baskerville', serif;
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}
+.nyitolap {
+  background: url("https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg")  no-repeat 70% center/cover;
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  display: table;
+}
+.szovegborito {
+  display: table-cell;
+  vertical-align: middle;
+}
+.nyitoszoveg {
+  margin: 0 auto;
+  padding: .625rem;
+  color: hsla(0,0%,100%,.9);
+  background: hsla(100,0%,0%,.5);
+}
+.nyitoszoveg h1 {
+  font-size: 3.15rem;
+  color: #d2ba87;
+  margin-top: 2rem;
+}
+.tagline {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+}
+.tagline::after {
+  display: block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 12.515625rem;
+  margin: .5rem auto;
+}
+.date {
+  font-size: 1.25rem;
+  letter-spacing: .15rem;
+  vertical-align: middle;
+}
+.date::before,
+.date::after {/*elválasztó vonal*/
+  display: inline-block;
+  content: "";
+  background-color: #fff;
+  height: 1px;
+  width: 1.5rem;
+  vertical-align: middle;
+  margin: 0 .5rem;
+}
+.helyszinek,
+.pro,
+.gift,
+.qa,
+.cont {
+  width: 95%;
+  margin: 1.5rem auto;
+  padding: .5rem 1rem;
+  text-align: center;
+}
+.loc img {
+  height: 7.5rem;
+  width: 7.5rem;
+}
+
+.loc h3 {
+  font-weight: 700;
+}
+.loc {
+  font-family: 'Muli', sans-serif;
+}
+.loc::after {/*elválasztó vonal*/
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 25vw;
+  margin: 1.5rem auto;
+  background-color: #444349;
+}
+.pro {
+  width: 100vw;
+  text-align: left;
+  background: hsla(100,0%,0%,.6);
+  color: #d2ba87;
+  font-family: 'Muli', sans-serif;
+}
+.pro h2 {
+  font-family: 'Great Vibes', cursive;
+  margin-top: 1rem; /* To account for the unequal margins compared to the previous section. */
+  text-align: center;
+}
+
+.pro p {
+  font-style: italic;
+}
+.pro ul {
+  letter-spacing: .025rem;
+}
+.gift img {
+  height: 7.5rem;
+  width: 7.5rem;
+}
+
+.qa {
+  background: hsla(100,0%,0%,.6);;
+  color: #d2ba87;
+  width: 100vw;
+  text-align: center;
+}
+.qa h2 {
+  margin-top: 1rem; /* To even out top and bottom margins. */
+}
+
+.qa p {
+  font-family: 'Muli', sans-serif;
+  text-align: left;
+}
+.qa-gr::after {
+  content: "";
+  display: block;
+  height: .1875rem;
+  width: 50vw;
+  margin: 1.5rem auto;
+  background-color: #d2ba87;
+}
+.q {
+  font-weight: 700;
+  margin-bottom: .5rem;
+}
+
+.a {
+  margin-bottom: 1.5rem;
+}
+
+footer {
+  height: 10vh;
+  width: 100vw;
+  color: #fff;
+  background: #606060;
+  font-family: 'Muli', sans-serif;
+  font-size: .875rem;
+  text-align: center;
+  display: table;
+}
+.fdoboz {
+  display: table-cell;
+  vertical-align: middle;
+  padding: .5rem 1rem;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+/*nem mobilokra */
+
+@media (min-width: 768px) {
+
+  .cover {
+    background: url('https://orange.codeberryschool.com/content/images/project-assets/wedding-landing-cover.jpg') no-repeat center/cover;
+  }
+  .nyitoszoveg {
+    padding: 1.25rem;
+    border-radius: 4px;
+    width: 50%;
+  }
+  .nyitoszoveg h1 {
+    font-size: 6rem;
+  }
+  .tagline {
+    text-transform: uppercase;
+  }
+  .loc {
+    display: inline-block;
+    width: 30%;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .loc::after {
+    display: none;
+  }
+  .pro-szoveg {
+    width: 30vw;
+    margin: 0 auto;
+  }
+  .qa-gr {
+    display: inline-block;
+    width: 30%;
+    vertical-align: top;
+    padding: 1.5rem;
+    margin: .5rem;
+  }
+
+  .qa-gr::after {
+    display: none;
+  }
+
+  .qa-gr h3 {
+    text-align: left;
+  }
+  footer {
+    min-height: 7vh;
+  }
+
+}
+
+</style>
+</head>
+<body>
+  <header>
+    <div class="nyitolap">
+      <div class="szovegborito">
+        <div class="nyitoszoveg">
+          <div class="tagline">We're getting married!</div>
+          <h1>Zoe &amp; Alex</h1>
+          <span class="date">August 1, 2018</span>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main>
+    <section class="helyszinek">
+      <h2>Locations</h2>
+        <div class="loc">
+          <h3>Ceremony</h3>
+          <img src="./Zoe &amp; Alex esküvője_files/wedding-landing-ceremony.png" alt="gyuru" width="70">
+         <p>St. Nicholas Church</p>
+         <p>2 Trinity Square, Budapest</p>
+        </div>
+        <div class="loc">
+          <h3>Photos</h3>
+          <img src="./Zoe &amp; Alex esküvője_files/wedding-landing-photoshoot.png" alt="fotozas" width="70">
+          <p>Liberty Bastion</p>
+          <p>23 Wisdom Road, Budapest</p>
+        </div>
+        <div class="loc">
+          <h3>Party</h3>
+          <img src="./Zoe &amp; Alex esküvője_files/wedding-landing-party.png" alt="buli" width="70">
+          <p>Heaven Lounge</p>
+          <p>14 Fairy Street, Budapest</p>
+        </div>
+    </section>
+    <section class="pro">
+      <h2>Program</h2>
+        <div class="pro-szoveg">
+          <p>"It's going to be somehow, that's for sure."</p>
+          <ul>
+            <li>13:45 – Wedding ceremony</li>
+            <li>14:30 – Photos</li>
+            <li>16:00 – Cocktails</li>
+            <li>18:00 – Dinner</li>
+            <li>22:00 – Cake</li>
+            <li>... - 4:00 – Dance until dawn</li>
+         </ul>
+      </div>
+    </section>
+    <section class="gift">
+      <h2>Gifts</h2>
+      <p>The greatest gift for us is to have you there.</p>
+       <img src="./Zoe &amp; Alex esküvője_files/wedding-landing-gifts.png" alt="Gifts">
+      <p>Please, just bring yourself and have fun with us.</p>
+    </section>
+    <section class="qa">
+      <h2>Questions &amp; Answers</h2>
+        <div class="qa-gr">
+          <h3>Travel and accomodations</h3>
+          <p class="q">Will there be some kind of organized transfer?</p>
+          <p class="a">No, we'll just meet at the church at 13:15.</p>
+          <p class="q">Where can I park?</p>
+          <p class="a">Parking is free on the weekends in the 1st district. The locations are close to each other so you won't need your car.</p>
+          <p class="q">How can I get home at night?</p>
+          <p class="a">The 916 bus is in service all night at the castle and it hits</p>
+        </div>
+        <div class="qa-gr">
+          <h3>Food and festivities</h3>
+          <p class="q">I'd like to do some kind of surprise for you guys at the party. To whom should I talk about this?</p>
+          <p class="a">Discuss it with Abigail Smith. Just drop her an email at abigail@awesomemail.com.</p>
+          <p class="q">What should I wear? Do you have a dress code?</p>
+          <p class="a">Wear what's comfortable to you. If it helps smart casual / business casual for the ladies and smart casual / informal for the gentlemen are perfect options.</p>
+          <p class="q">I would like some kind of special food (gluten-free, lactose-free, vegan etc.)</p> 
+          <p class="a">Drop us a line here and we'll find a way.</p>
+      </div>
+      <div class="qa-gr">
+        <h3>Other small stuff</h3>
+        <p class="q">I have a problem / question on the wedding day. With whom can I speak?</p>
+        <p class="a">Jared Wright on this number: +36 30 000 0000.</p>
+        <p class="q">Can we bring kids?</p>
+        <p class="a">Sure! We planned a whole toy / sweets corner for them.</p>
+        <p class="q">How do you feel about dogs? Can I bring mine?</p>
+        <p class="a">We love dogs and you can absolutely bring yours. The Heaven Lounge is a dog-friendly place.</p>
+      </div>
+    </section>
+    <section class="cont">
+      <h2>Contact</h2>
+      <p>If you have any questions feel free to call / write us.</p>
+      <p>Phone:<a href="tel:+36300000000">+36 30 000 0000 </a> (Zoe)/<a href="tel:+36300000000">+36 30 000 0000</a>(Alex)</p>
+      <p>Email: <a href="mailto:zoeandalex@awesomemail.com" <="" a="">zoeandalex@awesomemail.com</a></p><a href="mailto:zoeandalex@awesomemail.com" <="" a="">
+    </a></section><a href="mailto:zoeandalex@awesomemail.com" <="" a="">
+  </a></main><a href="mailto:zoeandalex@awesomemail.com" <="" a="">
+  </a><footer><a href="mailto:zoeandalex@awesomemail.com" <="" a="">
+    </a><p class="fdoboz"><a href="mailto:zoeandalex@awesomemail.com" <="" a="">Made with ♥ in Budapest ©2018 | Icons by </a><a href="http://www.flaticon.com/authors/becris">Becris</a>(<a href="https://creativecommons.org/licenses/by/3.0/">CC 3.0 BY</a>)
+      </p>
+  </footer>
+
+</body></html>
